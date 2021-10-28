@@ -31,7 +31,34 @@ class Candy {
     System.out.println(candyName); 
   }
 
-  
+//randome number generator for the candy
+ String getCandy(){
+   
+   Random rand = new Random();
 
+      int randCandyGen = rand.nextInt(101);
+
+      if(randCandyGen > 1 && randCandyGen <= 10){
+        return(candyNameList[0]);
+      }
+      else if(randCandyGen > 10 && randCandyGen <= 30){
+        return(candyNameList[1]);
+      }
+      else if(randCandyGen > 30 && randCandyGen <= 45){
+        return(candyNameList[2]);
+      }
+      else if(randCandyGen > 45 && randCandyGen <= 55){
+        return(candyNameList[3]);
+      }
+      else if(randCandyGen > 55 && randCandyGen <= 70){
+        return(candyNameList[4]);
+      }
+      else if(randCandyGen > 70 && randCandyGen <= 95){
+        return(candyNameList[5]);
+      }
+      else{
+        return(candyNameList[6]);
+      }
+ }
 
 }
